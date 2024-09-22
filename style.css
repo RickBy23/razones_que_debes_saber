@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+    background-image: url('img/fondo-corazon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .img {
+    margin: auto;
+    display: flex;
+    width: 3000px;
+}
+
+img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Específico para imágenes con forma de corazón */
+.container .heart-img {
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    clip-path: path('M253.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C150.6,4.9,107.5-9.5,76.9,6.7C42.8,22.9,26.6,62.4,53.5,110.9 C73.3,145.1,107.5,170.3,165,217c59.3-46.7,93.5-71.9,111.5-106.1C303.4,64.2,287.2,22.9,253.1,6.7z');
+    margin-left: -80px; /* Ajusta este valor según necesites */
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0, 0,0.3);
+
+}
+
+.container_no {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .img_no {
+    margin: auto;
+    display: flex;
+    width: 30000px;
+}
+
+.container_no .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.container_si {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px;
+}
+
+.container_si .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.container_siguiente1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px;
+}
+
+.container_siguiente1 .btn {
+    display: flex;
+    gap: 25px;
+}
+
+h1 {
+    color: black;
+}
+
+.container_no2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .img_no2 {
+    margin: auto;
+    display: flex;
+    width: 30000px;
+}
+
+.container_no .btn {
+    display: flex;
+    gap: 25px;
+}
