@@ -195,3 +195,65 @@ h1 {
     display: flex;
     gap: 25px;
 }
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgba(37, 42, 46, 0.9);
+        width: 180px;
+        z-index: 10;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+    /* Permitir scroll en pantallas pequeñas */
+    body, .background {
+        overflow-y: auto;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 5px;
+        gap: 15px;
+    }
+
+    /* Ajustes para los corazones flotantes */
+    .heart {
+        width: 15px;
+        height: 15px;
+        animation-duration: 4s;
+    }
+
+    /* Ajustes para los botones */
+    .btn a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
