@@ -46,3 +46,20 @@ envelope.addEventListener('mouseleave', () => {
     envelopeClosed.style.display = 'flex';
     envelopeOpened.style.display = 'none';
 });
+
+function sendWhatsAppMessage(event) {
+    event.preventDefault(); // Evita que el formulario se envíe tradicionalmente
+
+    const fecha = document.getElementById('fecha').value;
+    const hora = document.getElementById('hora').value;
+
+    // Formatea el mensaje
+    const mensaje = `Hola precioso, bello, apuesto y hermoso caballero! Te informo que la fecha y hora elegida es:\nFecha: ${fecha}\nHora: ${hora}`;
+
+    // Crea el enlace de WhatsApp con el mensaje
+    const numeroWhatsApp = '+593989784873'; // Número de WhatsApp al que quieres enviar el mensaje
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
+    // Redirige al enlace de WhatsApp
+    window.open(url, '_blank');
+}

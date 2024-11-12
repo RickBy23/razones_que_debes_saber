@@ -358,15 +358,20 @@ h1 {
     object-fit: contain;
 }
 
-.btn_spotify {
+.btn_spotify a {
+    display: inline-block;
     text-decoration: none;
-    background-color: black;
-    color: #FFFFFF;
-    border: 2px solid #4EAD33;
+    background-color: #1DB954;
+    color: #fff;
+    border: 2px solid #1DB954;
     padding: 10px 25px;
     border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0, 0,0.3);
     font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_spotify a:hover {
+    background-color: #17a143;
+    transform: scale(1.05);
 }

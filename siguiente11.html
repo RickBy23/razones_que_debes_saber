@@ -13,12 +13,13 @@
             <img src="img/envelope-icon.png" alt="Carta cerrada" class="closed-icon">
         </div>
         <div class="envelope-opened" id="envelope-opened">
-            <form action="https://formsubmit.co/brpalomequeo@gmail.com" method="POST">
+            <form onsubmit="sendWhatsAppMessage(event)">
                 <p>Por favor, avísame la fecha adecuada para salir cuando gustes:</p>
-                <input type="date" name="fecha" required>
-                <input type="time" name="hora" required>
+                <input type="date" id="fecha" required>
+                <input type="time" id="hora" required>
                 <button type="submit">Enviar</button>
             </form>
+
         </div>
     </div>
     <div class="spotify-container">
