@@ -31,3 +31,18 @@ function moverAleatoriamente(btn) {
 btnNo.addEventListener("mouseenter", function (e) {
     moverAleatoriamente(e.target);
 });
+
+const envelope = document.getElementById('envelope');
+const envelopeClosed = document.getElementById('envelope-closed');
+const envelopeOpened = document.getElementById('envelope-opened');
+
+// Alternar la visibilidad de la carta al hacer hover
+envelope.addEventListener('mouseenter', () => {
+    envelopeClosed.style.display = 'none';
+    envelopeOpened.style.display = 'block';
+});
+
+envelope.addEventListener('mouseleave', () => {
+    envelopeClosed.style.display = 'flex';
+    envelopeOpened.style.display = 'none';
+});
