@@ -375,3 +375,39 @@ h1 {
     background-color: #17a143;
     transform: scale(1.05);
 }
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    z-index: 1;
+}
+
+.video-container video {
+    border: 3px solid #4EAD33;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.video-container .btn a {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: #FFFFFF;
+    border: 2px solid #4EAD33;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0, 0,0.3);
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-container .btn a:hover {
+    background-color: #4EAD33;
+    color: black;
+    transform: scale(1.1);
+}
